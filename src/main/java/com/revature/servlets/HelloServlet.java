@@ -15,14 +15,14 @@ public class HelloServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		PrintWriter pw = res.getWriter();
-		pw.print("<h1>Hello from doGet method!</h1>");
-		res.setStatus(200);
+		pw.print("<h1>Hello from doGet method from Jenkins! Pipelines are AWESOME!!!</h1>");
+		res.setStatus(202);
 		
 	}
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		PrintWriter pw = res.getWriter();
 		pw.print("<h1>Hello from doGet method!</h1>");
-		res.setStatus(202);
+		res.setStatus(200);
 	}
 }
